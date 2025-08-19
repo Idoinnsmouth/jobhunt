@@ -1,7 +1,8 @@
 import pandas as pd
-from jobspy import scrape_jobs, JobPost
+from jobspy import scrape_jobs, JobResponse
 from pandas import DataFrame
 
+from create_report import create_report
 from job import Job
 
 
@@ -21,15 +22,14 @@ def run():
 
     # -------------------------------------
     jobs = load_jobs_to_classes(jobs_data=jobs_data)
-
+    create_report(jobs=jobs)
 
 
 def load_jobs_to_classes(jobs_data: DataFrame):
     jobs: list[Job] = []
     for data in jobs_data.itertuples(index=False):
-        data: JobPost
         job = Job(
-            company=data.company_name,
+            company=data.company,
             company_desc=data.company_description,
             employees_num=data.company_num_employees,
             company_url=data.company_url_direct,
@@ -37,7 +37,7 @@ def load_jobs_to_classes(jobs_data: DataFrame):
             is_remote=data.is_remote,
             level_desc=data.job_level,
             url=data.job_url_direct,
-            location=data.location.display_location(),
+            location=data.location,
             title=data.title,
             linkedin_url=data.job_url,
             linkedin_company=data.company_url
@@ -45,7 +45,9 @@ def load_jobs_to_classes(jobs_data: DataFrame):
 
         jobs.append(job)
 
-        return jobs
+    return jobs
+
+
 
 if __name__ == "__main__":
     run()

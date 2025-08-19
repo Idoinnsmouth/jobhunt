@@ -1,3 +1,7 @@
+from dataclasses import dataclass
+
+
+@dataclass
 class Job:
     company: str
     company_desc: str | None
