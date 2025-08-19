@@ -1,0 +1,1132 @@
+,id,site,job_url,job_url_direct,title,company,location,date_posted,job_type,salary_source,interval,min_amount,max_amount,currency,is_remote,job_level,job_function,listing_type,emails,description,company_industry,company_url,company_logo,company_url_direct,company_addresses,company_num_employees,company_revenue,company_description,skills,experience_range,company_rating,company_reviews_count,vacancy_count,work_from_home_type
+0,in-be3e8b8d7fa71a19,indeed,https://il.indeed.com/viewjob?jk=be3e8b8d7fa71a19,https://cybellum.com/careers/46.857/,Full Stack Developer,Cybellum,"תל אביב -יפו, TA, IL",2025-08-06,fulltime,,,,,,False,,,,,"**Description**
+---------------
+
+
+Cybellum is a cybersecurity company specializing in keeping physical devices like cars, medical and industrial devices cyber secure.
+
+
+We are recruiting a talented and highly motivated FullStack Engineer to join our Core Team.
+
+
+As a FullStack developer at Cybellum, you'll be an integral part of our Core Team, responsible for crafting intuitive and visually stunning user interfaces. Collaborating closely with product management and design teams, you'll translate requirements and Figma mockups into interactive front\-end interfaces using React and TypeScript.
+
+
+Leveraging your proficiency in Python to develop and maintain backend services that power our web applications. Harnessing your strong SQL skills and experience to design and optimize database schemas. Utilizing Flask and related frameworks to create RESTful APIs, ensuring smooth communication between the front\-end and back\-end components.
+
+
+
+
+**Responsibilities**
+--------------------
+
+
+* Collaborate with product management and design teams to transform requirements and Figma mockups into visually appealing, interactive front\-end interfaces.
+* Develop high\-quality, scalable, and reusable code to ensure efficient and seamless user experiences.
+* Review code and provide valuable feedback to ensure code quality and maintain best practices.
+* Work closely with backend developers and quality assurance teams to integrate and test front\-end components effectively.
+* Contribute to the enhancement of development processes and methodologies within the team.
+
+
+
+
+**Requirements**
+----------------
+
+
+* Demonstrated ability to make technological and architectural decisions.
+* Experience interfacing with other teams to integrate various parts of the product.
+* Conduct design and code reviews to ensure quality and efficiency.
+* Excellent problem\-solving skills and the ability to thrive in a collaborative team environment.
+* Fluent communication skills in English, both written and verbal.
+
+**Front End Requirements:**
+
+* Minimum 3\+ years of experience as a software engineer.
+* Proficiency in Frontend Engineering using React and TypeScript.
+* **Strong knowledge of RESTful APIs and integrating front\-end interfaces with back\-end systems.**
+* Proven track record as a Front\-end Developer, with a focus on building complex web applications.
+
+**Backend Requirements:**
+
+* Proficiency in **Python** (3\+ years of commercial use).
+* Proficiency in web development with **Flask and related frameworks.**
+* Strong knowledge of **SQL** (Postgres preferred) and experience with ORM technologies like SqlAlchemy, DjangoORM, etc.
+* Git proficiency for version control.
+* Familiarity with Docker for containerization.
+* Familiarity with **Kubernetes.**
+
+
+Experience with clouds (AWS, Azure) (optional but beneficial).",,https://il.indeed.com/cmp/Cybellum,,,,,,,,,,,,
+1,in-4f2935a6ec844a2e,indeed,https://il.indeed.com/viewjob?jk=4f2935a6ec844a2e,https://www.fiverr.com/jobs/REMuOTU0?coref=1.11.p5E_2715,Fullstack Engineer,Fiverr,"תל אביב -יפו, TA, IL",2025-07-29,fulltime,,,,,,False,,,,,"Are you ready to work on innovative web projects that will reach a wide audience and make a significant impact? If so, you’ve come to the right place.
+
+
+We’re looking for a Senior Fullstack Developer with at least 6 years of experience to join our fast\-paced, high\-performing team. You’ll be working on exciting and high\-impact features in Fiverr’s Innovation space, integrating LLM\-powered components and shaping next\-gen user interfaces.
+
+
+This is a great opportunity to contribute to a mission\-critical team, where your expertise will directly influence our product and business KPIs.
+
+
+You’ll be working in a hybrid environment, an innovative team of developers and AI engineers. With a high degree of ownership and responsibility.
+
+
+
+Requirements:
+
+
+* 6\+ years of experience in Fullstack, someone with hands\-on experience building both the **frontend (React/JS/CSS)** and the **backend (Python)** of large\-scale applications.
+* Excellent soft skills, including clear and concise communication, effective context gathering, ownership mindset, and the ability to collaborate across cross\-functional teams.
+* Adaptability, problem\-solving skills, and a passion for the position are more important than meeting 100% of the technical requirements.
+
+
+
+What am I going to do?:
+
+
+* Lead end\-to\-end projects with an autonomous, proactive approach.
+* Build scalable and high\-performance UIs using React and TypeScript.
+* Contribute primarily to backend services with python, with secondary involvement in other languages as required.
+
+
+
+Equal opportunities:
+
+
+
+At Fiverr, we’re not about checklists. If you don’t meet 100% of the requirements for this role but still feel passionate about the position and think you have the right skills and qualifications to excel at it, we want to hear from you.
+
+
+At Fiverr, we prioritize diversity. We celebrate difference and embed it into every aspect of our workplace and product, as well as our community. Fiverr is proud and committed to providing equal opportunity employment to all individuals regardless of race, color, religion, sex, sexual orientation, citizenship, national origin, disability, Veteran status, or any other characteristic protected by law. In addition, Fiverr will provide accommodation to individuals with disabilities or a special need.",,https://il.indeed.com/cmp/Fiverr,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/571bdc66ab1c386b921f6f340b88410a,https://www.fiverr.com/,,201 to 500,$1M to $5M (USD),"At Fiverr, it’s our mission to grow and cultivate the world’s largest digital marketplace, a place where people can find and purchase any service they need, and build any business they dream.",,,,,,
+2,in-e6ab332efb35832f,indeed,https://il.indeed.com/viewjob?jk=e6ab332efb35832f,https://grnh.se/27baadd68us,Senior Fullstack Software Developer,Apono,"תל אביב -יפו, TA, IL",2025-07-22,,,,,,,False,,,,,"At Apono, we empower organizations to run in the cloud by aligning operations and security around access management. Our platform provides companies with just\-in\-time and Just\-Enough access across their hybrid environments, reducing access risk while improving productivity.
+
+Apono has offices in New York and Tel Aviv and supports dozens of customers across the US and the world, including large Fortune 500 companies and was honored in Gartner's Magic Quadrant for Privileged Access Management.
+
+
+**What We're Looking For:**
+
+
+
+We're seeking an experienced and proactive Senior Full Stack Engineer to join our fast\-paced team. You should be a versatile developer, fluent in building both backend services and polished frontend experiences, with a slight edge toward backend problem\-solving and architectural thinking. We're looking for someone who thrives on owning features end\-to\-end, drives technical excellence, and is eager to shape the future of our product. You won't just write code — you'll take initiative, solve real product challenges, and bring a sharp eye to detail and usability.
+
+
+**Responsibilities:**
+
+
+* Design, develop, and maintain full\-stack features using React on the frontend and Kotlin on the backend.
+* Own your work across the stack — from schema and APIs to UI and UX.
+* Contribute to our infrastructure, testing strategy, and CI/CD pipelines.
+* Collaborate closely with product, design, and engineering peers.
+* Lead by example: write clean, maintainable code, participate in reviews, and uphold high engineering standards.
+
+
+**Requirements:**
+
+
+* 6\+ years of experience building scalable SaaS applications across the stack.
+* Strong backend fundamentals — ideally in Kotlin, Java, Go, C\# (or Python, Node.js).
+* Solid frontend experience with React (other modern frameworks like Vue or Angular are also acceptable).
+* Strong experience working in cloud native environments (AWS/GCP and Docker, Kubernetes) — Deep understanding of deployments and ops exposure.
+* Comfortable designing and implementing APIs (REST or GraphQL).
+* Experience working with databases — both relational (e.g. PostgreSQL) and NoSQL (e.g. MongoDB)
+* Experience writing automated tests and CI/CD workflows.
+* Strong system design skills and an ability to lead projects independently.
+* Team player with great communication and a passion for building great products.
+* Previous startup experience\- strong advantage.
+
+
+If you're someone who loves solving real\-world problems, owning features end\-to\-end, and building elegant, scalable systems — we'd love to talk!",,https://il.indeed.com/cmp/Apono,,,,,,,,,,,,
+3,in-7da49af9abcbbe4b,indeed,https://il.indeed.com/viewjob?jk=7da49af9abcbbe4b,https://ironcircle.bamboohr.com/careers/83?source=indeed&src=indeed&postedDate=2025-07-01,Senior AI Fullstack Developer,IronCircle,"רמת גן, TA, IL",2025-07-01,fulltime,,,,,,False,,,,,"We are seeking a talented and driven Senior AI Fullstack Developer to join our dynamic R\&D team. This role involves developing robust, scalable software solutions, integrating cutting\-edge AI technologies such as GPT and Gemini, and using AWS as our cloud service platform. You will be expected to lead projects from concept to deployment, collaborating closely with cross\-functional teams to innovate and deliver high\-quality products.
+
+ **About Us**
+
+
+
+With over 17\+ years of experience, IronCircle is one of the leading global tech education, training, and service providers sending thousands of learners to new and exciting careers, serving and developing tech\-related ecosystems.
+
+
+
+In 2018, IronCircle entered the US market via a university partnership model and have successfully partnered with colleges and universities to train the next generation of industry professionals. Unique to our program, TDX Arena is an AI\-fueled powerhouse learning platform that helps learners apply concepts learned in class to real\-world situations.
+
+
+
+With over 50,000 cybersecurity alumni worldwide, IronCircle is highly experienced at delivering the most effective accelerated cybersecurity training and educational programs.
+
+ **Responsibilities**
+
+
+* Design, develop, and deploy full\-stack AI solutions using Python and JavaScript.
+* Implement and maintain cloud\-based applications and services on AWS.
+* Work with AI models like GPT and Gemini, and frameworks such as LangChain to build intelligent and efficient systems.
+* Collaborate with data scientists and backend teams to integrate AI technologies into our products.
+* Ensure code quality, sustainability, and scalability.
+* Mentor junior developers and contribute to the team's knowledge\-sharing effort.
+
+
+
+
+**Experience/ Skills Required**
+
+
+* 3\+ years of experience in software development with a strong background in Python and JavaScript.
+* Proven experience with AWS cloud services (EC2, S3, Lambda, etc.).
+* Extensive experience working with AI models, particularly GPT and Gemini.
+* Proficiency in using AI frameworks like LangChain.
+* Excellent problem\-solving skills and ability to work in a team\-oriented, collaborative environment.
+
+
+
+
+**Additional Experience/Skills Preferred**
+
+
+* Master's degree or higher in a relevant field.
+* Experience leading a development team or managing large\-scale projects.
+* Experience with PHP Laravel framework for web application development.
+* Familiarity with DevOps practices and tools (CI/CD pipelines, monitoring, etc.).
+* Contributions to open\-source projects or a strong portfolio of relevant projects.
+* Advanced certifications in AWS, AI, or machine learning technologies.
+
+
+
+
+**Values**
+
+
+* Passion is our driver.
+* Excellence is how we deliver.
+* People are our focus \- learners and employees.
+* Change creates opportunity \- we embrace change.\\
+* Learning never stops and neither do we.
+
+
+
+
+**Your Success is our Success**
+
+
+
+If you're a driven, collaborative person who thrives on breaking new ground and inspiring others to do the same, you’ll feel right at home here. We’re looking for someone who's passionate, high\-performer and pushes boundaries in pursuit of something bigger.
+
+
+
+You’re a self\-starter with a “ready to make an impact on day one” mindset—confident in your ability to add real value from the start and grow with us over the long term. If that sounds like you, we think you’ll be a perfect fit.
+
+
+
+At our core, we're more than just a company—we're a close\-knit team on a mission to change lives through the power of education. We work hard, we play hard, and we deeply value each person’s contributions toward our shared goals. We can’t wait to welcome the next game\-changer to our team. (Yes, we mean you.)
+
+ **Equal Employer Opportunity (EEO) Statement**
+
+
+
+We provide equal employment opportunities (EEO) to all employees and applicants for employment without regard to race, color, religion, sex, national origin, age, disability or genetics. In addition to federal law requirements, we comply with applicable state and local laws governing nondiscrimination in employment in every location in which the company has facilities.",,https://il.indeed.com/cmp/Ironcircle,,,,,,,,,,,,
+4,in-a6a3bff979795fe5,indeed,https://il.indeed.com/viewjob?jk=a6a3bff979795fe5,https://www.comeet.com/jobs/sensi/E7.00F/llm-applications-developer/56.859?coref=1.11.p5E_A611,LLM Applications Developer,Sensi S.R.L.,"תל אביב -יפו, TA, IL",2025-06-24,fulltime,,,,,,False,,,,,"**Join Our Mission at Sensi.AI**
+
+
+At Sensi.AI, we are dedicated to creating a world where every older adult receives the care they truly deserve. Guided by compassion and driven by innovation, we aim to redefine the future of caregiving. If you’re passionate about making a meaningful impact, join us in advancing Sensi.AI’s virtual assessment tool. This cutting\-edge technology monitors seniors' health in their homes 24/7, delivering emergency alerts, actionable insights, and predictive analysis to enable proactive and effective care.
+
+
+Here, you’ll discover exciting opportunities for professional growth, make a direct and meaningful impact on our products and company, and contribute to a mission that truly matters.
+
+ **About The Role**
+
+
+As an **LLM Applications Developer** at Sensi.AI, you will focus on designing and implementing applications that integrate Large Language Models (LLMs) and external AI services into production systems. Working as part of the Platform Tech Lead, you’ll be responsible for building scalable, reliable solutions, engineering prompts, and collaborating with R\&D and Product teams to deliver high\-impact features.
+
+ **Key Responsibilities**
+
+* Design, develop, and maintain backend services and applications that integrate LLMs and 3rd party AI services into production systems.
+* Engineer and optimize prompts for various AI models to ensure accuracy, performance, and relevance.
+* Build scalable and reliable solutions that meet product and business requirements.
+* Collaborate with R\&D and Product teams to define and implement technical solutions.
+* Research and evaluate new AI models and tools, contributing to their adoption in production.
+
+
+
+Requirements:
+
+
+* **Experienced Software Engineer:** 4\+ years of experience in backend or fullstack development, with proven ability to build production\-grade, scalable systems.
+* **LLM Integration:** Hands\-on experience integrating Large Language Models (LLMs) into production applications — this is a must.
+* **Backend \& Cloud Expertise:** Proficiency in Python or Node.JS, with experience building scalable systems in cloud environments (AWS preferred). Hands\-on experience with microservices, containerized systems (Docker, Kubernetes), and message brokers (Kafka – an advantage).
+* **Prompt Engineering:** Ability to design and optimize prompts for LLMs in production use cases.
+* **Collaborative \& Solution\-Oriented:** Strong communication skills and ability to work closely with AI, Product, and Data teams to deliver high\-quality solutions.",,https://il.indeed.com/cmp/Sensi-S.r.l.,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/81ded1c403724e14ff7043e5bd3779bc,http://www.sensi.com.ar/web/principal.html,,,,,,,,,,
+5,in-eb98c5722a9f7cc9,indeed,https://il.indeed.com/viewjob?jk=eb98c5722a9f7cc9,https://www.comeet.com/jobs/biocatch/03.00E/full-stack-developer/ED.650?coref=1.11.p4E_F51C,Full Stack Developer,BioCatch,"תל אביב -יפו, TA, IL",2025-05-19,fulltime,,,,,,False,,,,,"BioCatch is the leader in Behavioral Biometrics, a technology that leverages machine learning to analyze an online user’s physical and cognitive digital behavior to protect individuals online. BioCatch’s mission is to unlock the power of behavior and deliver actionable insights to create a digital world where identity, trust, and ease coexist. Today, 34 of the world's largest 100 banks and 210 total financial institutions rely on BioCatch Connect™ to combat fraud, facilitate digital transformation, and grow customer relationships.. BioCatch’s Client Innovation Board, an industry\-led initiative including American Express, Barclays, Citi Ventures, and National Australia Bank, helps BioCatch identify creative and cutting\-edge ways to leverage the unique attributes of behavior for fraud prevention. With over a decade of analyzing data, over 80 registered patents, and unparalleled experience, BioCatch continues innovating to solve tomorrow’s problems. For more information, please visit www.biocatch.com.
+
+
+
+Are you an experienced Fullstack Developer passionate about using your skills to combat cybercrime and fraud? BioCatch, the market leader in behavioral biometrics, seeks a Fullstack Developer to join our dynamic team.
+
+
+As a Fullstack Developer at BioCatch, this role requires strong problem\-solving skills, working independently, and a solid understanding of web development technologies.
+
+**Responsibilities:**
+
+* Design, implement, and maintain tools and systems that support our business operations.
+* Collaborate with other developers and designers to create intuitive and user\-friendly interfaces.
+* Write clean, scalable, and maintainable code using Python and JavaScript
+* Troubleshoot and debug issues as they arise
+* Stay up\-to\-date with the latest web development technologies and best practices.
+* Contribute to the development of project plans and deliverables
+* Participate in code reviews to ensure code quality
+* Write technical documentation and contribute to the development of internal documentation
+
+
+
+
+Requirements:
+
+
+* B.Sc. in Computer Science or equivalent experience
+* 3\+ years of professional experience in full\-stack web development
+* Proficiency in Angular/React/Vue frameworks, HTML, CSS, and JS (ES2015, TypeScript)
+* Experience with Python \- a big advantage
+* Experience with REST APIs and web services \- Must
+* Strong problem\-solving skills and the ability to work independently
+* Excellent coding skills with a good understanding of large\-scale architecture and design patterns
+* Excellent communication skills and the ability to work well in a team environment
+* Be innovative and open\-minded with a strong passion for technology and eagerness to learn new things
+* Experience working with AI tools (agents, LLMs, etc.)
+
+
+
+
+Confidential salary:
+
+
+Yes",,https://il.indeed.com/cmp/Biocatch,,http://www.biocatch.com,Tel Aviv-Yafo,51 to 200,,,,,,,,
+6,in-944bd58adef5b39e,indeed,https://il.indeed.com/viewjob?jk=944bd58adef5b39e,https://team8.vc/careers/duality-fullstack-developer/?coref=1.11.p1E_9512,Duality -Fullstack Developer,Team8,"תל אביב -יפו, TA, IL",2025-04-27,,,,,,,False,,,,,"**About Duality**
+
+
+Duality is a New Jersey/Israel\-based startup at the forefront of developing and commercializing Privacy Enhanced Technology (PET) solutions. Our mission is to enable organizations to gain new insight and develop new services based on data collaboration between different organizations while keeping sensitive data secure in a way that was previously impossible. This makes Duality the leader of the PET market, which is considered the next big thing in digital transformation.
+
+
+Founded by world leaders in the fields of data science and cryptography – including Prof. Shafi Goldwasser, a Turing Award winner, Prof. Vinod Vaikuntanathan, an associate professor at MIT and a Godel prize winner, and Dr. Kurt Rohloff, a recipient of DARPA Director’s Fellows.
+
+ **About the role**
+
+
+As a Full\-Stack Developer, you will contribute to developing an innovative, technology\-rich product and have a direct impact on its growth while getting creative and using your problem\-solving skills to tackle challenges.
+
+
+In this position, you will report to our Platform R\&D Director and work closely with various internal stakeholders, such as data scientists, product managers, designers, solution architects, etc.
+
+
+Our technology stack: ReactJS, TypeScript, Python, HTML/CSS, AWS, SQL, NoSQL (MongoDB), RabbitMQ, Docker, Linux, and Cypress
+
+
+
+Requirements:
+
+* 3\+ years’ experience in full\-stack development
+* Hands\-on, proficient in ReactJS
+* Experience with TypeScript
+* Experience in backend / server\-side / API development
+* B.Sc. in Computer Science/Software Engineering
+* Knowledge of UI design principles, design patterns, and best practices
+* English \- high level, verbal and written
+
+
+
+Team8:
+
+
+Duality",,https://il.indeed.com/cmp/Team8,,http://www.team8.vc,New York,11 to 50,,,,,,,,
+7,in-62b5c4f38b9a4774,indeed,https://il.indeed.com/viewjob?jk=62b5c4f38b9a4774,https://team8.vc/careers/team8-seed-fintech-startup-fullstack-team-leader/?coref=1.11.pFE_7514,Celery- Fullstack Tech Lead,Team8,"תל אביב -יפו, TA, IL",2025-04-17,,,,,,,True,,,,,"**Job Description:**
+
+
+We are a small early stage startup looking for an accomplished fullstack team leader with strong technical skills to join us on our road to change the way finance teams work!
+
+
+If you're looking to be part of a development team building a system from scratch—touching everything from servers, front\-end, architecture, and even product decisions—we're significantly expanding our team and need experienced people who love the 0 to 1 stage!
+
+
+We work with **Python/React on AWS.** Experience with these technologies is a plus but not a must.
+
+**Our offices are located in Tel Aviv near a train station, and we work from the office.**
+
+**Why join us?**
+
+* A fun and respectful company culture—it’s enjoyable to come to the office every day.
+
+* Exciting technical challenges and a direct impact on the company's success—no months of meetings about features that will never be used
+
+* High level of freedom and independence—if we’ve decided to bring you on, it's because we trust you, not to micromanage you
+
+* A unique opportunity to join the company in its early stages, with all the potential benefits of stock options and shared success
+
+
+
+Requirements:
+
+
+
+**Who this role is not for:**
+
+* If you’re looking for the order, structure, and stability of a corporate environment. We’re relatively organized for a startup, but things move fast, and priorities can change overnight.
+* If you only want to work on things you're already good at. Even we don’t know what our next challenge will be, so we can't make guarantees.
+* If you're looking for a fully remote position. We understand the benefits, but at this early stage, our developer, CEO, product manager, and marketing lead all sit in one room and collaborate closely.
+
+**So, if you:**
+
+* Have at least 6 years of development experience
+
+* Have at least 2 years in a team leader position with hands\-on work.
+
+* Have led complex projects as part of a team
+
+* Have strong **backend** and **frontend** fundamentals.
+
+* Truly understand the technologies and methodologies you work with
+
+* Have a success\-oriented mindset, even in areas where you have less experience.
+
+* Bring a positive attitude and are fun to work with
+
+
+
+
+Team8:
+
+
+Celery",,https://il.indeed.com/cmp/Team8,,http://www.team8.vc,New York,11 to 50,,,,,,,,
+8,in-cc7ace3bb3c94693,indeed,https://il.indeed.com/viewjob?jk=cc7ace3bb3c94693,https://jobs.smartrecruiters.com/Wix2/743999992291304-fullstack-developer,Fullstack Developer,"Wix.com, Inc.","תל אביב -יפו, TA, IL",2024-06-05,fulltime,,,,,,False,,,,,"**Company Description**
+
+With over 30 different products, Wix makes it easy for anyone to succeed online. We build web creation tools and business solutions, mobile apps, payment processing technologies, as well as CRM and marketing tools that help our users in different business sectors and compete online. Our technologies are based on massive infrastructure required to securely and resiliently serve over 220 million users, and their visitors across the globe \- instantly. Our scale is enormous, and our plans for the future are even bigger.
+
+
+Wix’s product development teams work in a dev\-centric culture, deploy code hundreds of times every day using advanced automation tools, and create methodologies that enable a fast\-to\-production environment. We operate in small highly\-collaborative teams, but belong to professional groups called Guilds, dedicated to personal and professional growth.
+
+
+We’re proud to be an equal opportunity employer. Wix was built around the idea that everyone has the right to be successful, online. This same vision defines us as an employer: creating a work environment where everyone is welcome, and anyone has the right to succeed.
+
+ **Job Description**
+
+* Become a frontend master as part of our amazing Frontend Engineering team.
+* Improve your skills and learn from top\-notch engineers.
+* Tackle tough problems and find creative ways to solve them.
+* Push your code to millions of users every day.
+* Work on cutting\-edge technologies and become an industry leader.
+* Write TDD and clean code
+
+
+
+**Qualifications**
+
+* An ambitious, experienced Fullstack or Backend Developer who’s excited at the prospect of entering the world of Frontend.
+* You’re fluent in server\-side technologies (NodeJS, Java, .NET, Python, Ruby). If you have experience in Test Driven Development (TDD) and Continuous Delivery, that’s a bonus.
+* You’re also a self\-learner who is independent but a great team player
+
+
+
+**Additional Information**
+
+Wix’s Frontend Engineering group. We have a development culture that is transparent, highly technical and agile. We develop and maintain highly scalable systems that support Wix’s hundreds of millions of users—and the people who visit their websites. Our team leaders set the tone and standard of our developer\-centric culture. They are also mentors of engineers, helping them better themselves, both in terms of technical and human skills, through pair\-programming, coaching and mentorship.",Internet And Software,"https://il.indeed.com/cmp/Wix.com,-Inc.",https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/31568ac47319409e8fc0fdf22e0ad5ee,http://www.wix.com,"500 Terry A Francois Blvd 6th floor, San Francisco, CA 94158, United States","5,001 to 10,000",$500M to $1B (USD),"Wix provides over 200 million users, business, agencies and companies the tools to create a stunning and professional online presence.",,,,,,
+9,in-225be0971add6190,indeed,https://il.indeed.com/viewjob?jk=225be0971add6190,https://www.novilis.co.il/press-kit#,EXPERIENCED FULLSTACK DEVELOPER,נוביליס מערכות תכנה,"ראשון לציון, M, IL",2021-11-04,,,,,,,False,,,,,"Over 3 years of experience as a FullStack software developer in large organizations
+
+In\-depth planning and understanding of complex architecture
+
+Proven experience in NodeJS \- a big advantage
+
+Proven experience in Python \- a big advantage
+
+Proven experience in Angular \- a big advantage (or experience in vue or react)
+
+Familiarity with JQuery and bootstrap
+
+Knowledge of Html, Javacript, CSS, JSON
+
+Familiarity with REST
+
+Experience and understanding of Microservices architecture \- an advantage
+
+Experience with git and docker \- an advantage
+
+Ability and experience working in a development team, independent
+
+Bachelor's Degree in Computer Science / Computer Engineering / Practical Engineer Graduate in Computer Science / Graduates of the IDF Technologies Unit / who have completed advanced courses in information systems \- required",,https://il.indeed.com/cmp/%D7%A0%D7%95%D7%91%D7%99%D7%9C%D7%99%D7%A1-%D7%9E%D7%A2%D7%A8%D7%9B%D7%95%D7%AA-%D7%AA%D7%9B%D7%A0%D7%94,,,,,,,,,,,,
+10,in-6cc522e6c9da79e8,indeed,https://il.indeed.com/viewjob?jk=6cc522e6c9da79e8,https://datawit.breezy.hr/p/8996ceb968e7-fullstack-developer?source=indeed,FullStack Developer,DataWit,"תל אביב -יפו, TA, IL",2018-10-01,fulltime,,,,,,False,,,,,"**About the Company**:
+
+
+
+DataWit (www.datawit.com) is a funded, early stage startup based in Tel\-Aviv. We develop marketing solutions managed by AI. Implemented by various clients, our solution is already showing phenomenal results while dramatically reducing setup and maintenance efforts.
+
+
+**Job Description:**
+
+
+We are hiring a Full Stack Engineer to participate in the design, prototyping and implementation of end\-to\-end services that include integrations with our ML infrastructure. As a Full Stack engineer at DataWit, you will have the opportunity to learn, incorporate and utilize the newest technology in order to build a world\-class system that can scale to support our ever\-growing pool of customers.
+
+
+You'll work directly with top notch data scientists and engineers.
+
+
+If working in an early stage startup using cutting edge technologies and a dynamic team sounds interesting \- this is the place for you!
+
+
+
+**Out current stack :**
+
+
+* Python 3
+* MongoDB
+* Docker
+* AWS
+* Angular
+* Git \& GitLab
+
+
+
+**Job Requirements**:
+
+
+* 3\+ years of experience as a full stack developer in any stack
+* 3\+ years of experience in Python development
+* 3\+ years of experience with MongoDB
+* Recent and relevant experience in scalable, reliable, responsive, secure web development
+* Experience with cloud infrastructure (AWS)
+* Strong skills in JavaScript, jQuery, CSS, CSS3, and HTML5\.
+* Must be a team player with good interpersonal skills
+* Self\-management skills within an agile fast\-paced work environment.
+* Highly motivated and with a passion for learning new things.
+* Ability to work well within a team environment that includes geographically distributed team members.",,https://il.indeed.com/cmp/Datawit,,,,,,,,,,,,
+11,li-4232858241,linkedin,https://www.linkedin.com/jobs/view/4232858241,https://www.wiz.io/careers/job/4563106006/:title?gh_jid=4563106006&gh_src=b63024e56us#app&urlHash=B5W-,Website Developer,Wiz,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-08-15,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"Come join the company that is reinventing cloud security and empowering businesses to thrive in the cloud. As the fastest\-growing startup ever, Wiz is on a mission to help organizations secure cloud environments that will accelerate their businesses. Trusted by security teams all over the world, we have a proven track record of success and a culture that values world\-class talent.
+
+
+
+
+ Our Wizards from over 13 countries work together to protect the infrastructure of our hundreds of customers, including over 45% of the Fortune 100, who trust us to scan and secure over 230 billion files daily. We’re the leading player in a massive and growing market, but it’s still early enough for you to make a significant impact. At Wiz, you’ll have the freedom to think creatively, dream big, and use your full range of skills to contribute to our record growth. Come join our team and help us create secure cloud environments that allow the best companies to move faster.
+
+
+
+
+**Summary**
+ We're looking for an experienced
+ **Website Develope**
+ r to join our expanding R\&D team and help drive the growth of Wiz.
+
+
+
+
+ In this role, you will help maintain our enterprise level website (\[wiz.io](http://wiz.io/)) which will be used as our sharpest marketing tool to explain what Wiz does to visitors.
+
+
+
+
+ The team is also maintaining the Wiz Docs website, the gate to learn about Wiz and make the most of it for users.
+
+
+
+
+**What You'll Do**
+* Help bring content to prospective customers, showcasing the Wiz platform features and strengths, in a delightful \& educating experience.
+* Build new user\-facing features with beautiful and scalable UI components, for website, docs and future mini\-sites, while choosing the best\-fitting technologies.
+* Collaborate closely with other developers, as well as with the Product, Marketing, and UX teams to understand the business needs and translate goals into effective designs and infrastructure.
+* Be the owner of the wiz.io site and docs portal to ensure code quality, performance, and scalability of our website.
+
+
+**What You'll Bring**
+* 3\+ years of experience as a web developer
+* Broad knowledge of modern web frameworks, tools, and architecture.
+* Preferably Next.js, Tailwind CSS \& TypeScript with some Node.JS basic knowledge.
+* You're passionate about good design. You pay attention to details and provide your users with delightful experiences.
+* You're product\-minded. You have a sense of good user experience and you feel when something is off.
+* Independence and proactivity — you know how to prioritize and drive your work forward.
+* Experience working on high\-scale, production\-grade projects with an SEO\-oriented approach while delivering semantic and accessible code.
+
+
+*Applicants must have the legal right to work in the country where the position is based, without the need for visa sponsorship. This role does not offer visa sponsorship.*
+ Wiz is an equal opportunity employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics.
+
+
+
+
+ By submitting your application, you acknowledge that Wiz will process your personal data in accordance with Wiz's Privacy Policy.",Computer and Network Security,https://www.linkedin.com/company/wizsecurity,https://media.licdn.com/dms/image/v2/C560BAQEHFdqwvI6ShA/company-logo_100_100/company-logo_100_100/0/1654720940433/wizsecurity_logo?e=2147483647&v=beta&t=aUAirDOf_WCbcEc0ZcTrqMne9ZiWO_yG9N4EHX67SD4,,,,,,,,,,,
+12,li-4280245884,linkedin,https://www.linkedin.com/jobs/view/4280245884,https://grnh.se/b27bgz72teu&urlHash=ssbM,Junior Fullstack Web Developer,WeDev Technologies,"Holon, Tel Aviv District, Israel",2025-08-08,fulltime,,,,,,False,internship,Engineering and Information Technology,,,"**Company Description**
+ WeDev Technologies is a software development agency specializing in designing and developing complex web\-based software solutions.
+
+
+
+
+ Our company excels in 2 main areas:
+
+
+
+
+* Building and maintaining eCommerce shops using the Shopify platform, where our company is one of the only Shopify\-certified plus partners in Israel. Among our customers in this area you can find some of the biggest commerce brands in Israel and even the world, such as JDSports, mayven, GA\-DE, Panda\-zzz and more.
+* Building and maintaining complex custom\-developed software in a wide variety of technologies for multiple industries. You can find our custom\-developed apps in municipalities (such as Tel aviv), government institutions (such as IDF and multiple ministry offices) and in multiple health organizations (such as Assuta and Maccabi)
+
+
+ As a company we are committed to maintaining high standards of technical expertise and guaranteeing superior customer satisfaction.
+
+
+
+
+**Role Description**
+ This is a full\-time on\-site role for a Junior FullStack Web Developer located in Holon.
+
+
+
+
+ As a Junior FullStack Web Developer, you will be responsible for technical designing and developing complex web\-based applications and custom eCommerce stores for huge organizations and brands.
+
+
+
+
+ You will be developing using the latest web technologies to create stable, scalable and stunning web\-based solutions, all while learning from top\-talents in the industry.
+
+
+
+
+**Qualifications**
+* Independent, self learner eager to learn and succeed
+* Excellent problem\-solving and debugging skills
+* Knowledge of front\-end frameworks such as React, Angular, or Vue.js
+* Knowledge of back\-end development framework Node.js
+* Knowledge of MongoDB and SQL\-Based database
+* Understanding of responsive design
+* Strong communication and collaboration skills",Software Development,https://il.linkedin.com/company/wedevtech,https://media.licdn.com/dms/image/v2/C4D0BAQHgz2-lDT37UA/company-logo_100_100/company-logo_100_100/0/1644492795038?e=2147483647&v=beta&t=n_v-QR1gZO27F-uyc-M_f0yHDHFE6qsrZsC4V6TPxHc,,,,,,,,,,,
+13,li-4280198443,linkedin,https://www.linkedin.com/jobs/view/4280198443,https://aiola.ai/position/backend-engineer/?coref=1.11.pE3_471F&urlHash=j8Aw,Backend Engineer(Python),aiOla,"Herzliya, Tel Aviv District, Israel",2025-08-05,fulltime,,,,,,False,not applicable,Engineering and Information Technology,,,"We’re looking for a Backend Engineer to join our R\&D team and play a key role in designing and optimizing scalable backend architecture. If you love solving complex challenges, balancing practicality with innovation, and want to work on cutting\-edge AI technology—we’d love to meet you.
+
+
+
+
+**About AiOla**
+ aiOla is a deep\-tech AI lab specializing in Conversational, Voice, and Speech AI. We build enterprise\-grade ASR (Automatic Speech Recognition) and TTS (Text\-to\-Speech) technologies that power seamless, speech\-driven workflows—whether via API integration or intuitive in\-house applications.
+
+
+
+
+ Our patented ASR foundation model, developed by world\-class researchers, delivers 95%\+ accuracy across languages, accents, jargon, and acoustic environments. We help enterprises unlock spoken data, improve frontline productivity, and power AI voice agents with robust, scalable technology.
+
+
+
+
+ Requirements:
+
+
+
+
+* 3\+ years of backend development experience with large\-scale, complex systems.
+* Strong programming skills in Node.js/TypeScript and Python (must\-have).
+* Experience with NestJS, Kafka, SQL, and NoSQL databases.
+* Familiarity with AWS cloud services (e.g., Lambda, DynamoDB, Kubernetes).
+* Deep understanding of scalable software design, service\-oriented architecture (SOA), and data structures.
+* Strong analytical and problem\-solving skills; performance tuning experience is a plus.
+* Experience with CI/CD pipelines and modern DevOps practices.
+* B.Sc. in Computer Science or a related field (preferred).
+
+
+ Responsibilities:
+
+
+
+
+* Design and develop scalable, high\-performance backend systems.
+* Solve complex architectural and product challenges across the stack.
+* Work cross\-functionally with product, data, and engineering teams to deliver features end\-to\-end.
+* Ensure reliability, performance, and scalability using best practices in backend development.",Software Development,https://il.linkedin.com/company/aiola,https://media.licdn.com/dms/image/v2/D4D0BAQFoKhudJXe04Q/company-logo_100_100/B4DZXtAyN7HAAQ-/0/1743438161190/aiola_logo?e=2147483647&v=beta&t=IWyq1VnS5VhSsLWRx0L7WMRRNWHW3NWbA36dyKVPRoE,,,,,,,,,,,
+14,li-4276088829,linkedin,https://www.linkedin.com/jobs/view/4276088829,https://www.comeet.com/jobs/FrontStory/04.008/full-stack-developer/9C.954?coref=1.11.p99_2717&urlHash=MYW-,Full Stack Developer,FrontStory,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-07-27,fulltime,,,,,,False,not applicable,Engineering and Information Technology,,,"As a Full Stack Developer at
+ **KoDigital**
+ you will work on both the front\-end and back\-end of our applications, collaborating with a dynamic team to design, build, and maintain scalable, high\-performance software. You will leverage your SQL/NoSQL expertise and problem\-solving skills to ensure our systems are fast, efficient, and scalable.
+
+
+
+
+**Key Responsibilities:**
+* Design, develop, and maintain web applications using modern frameworks and technologies.
+* Write clean, efficient, and maintainable code for both front\-end and back\-end systems.
+* Manage and optimize database systems (SQL and NoSQL) for performance and scalability.
+* Integrate with third\-party APIs and data sources.
+* Collaborate closely with UX/UI designers and other developers to deliver high\-quality solutions.
+* Participate in code reviews and contribute to the continuous improvement of development processes.
+* Troubleshoot and debug issues as they arise.
+
+
+ Requirements:
+
+
+
+
+* At least 3 years of experience as a Full Stack Developer or in a similar role.
+* Strong knowledge of front\-end technologies (HTML, CSS, JavaScript, React, etc.) and back\-end frameworks (Node.js, TypeScript, JavaScript, Python, etc.).
+* Solid understanding of SQL and NoSQL databases (e.g., MySQL, MongoDB, etc.).
+* Familiarity with Git, version control, and collaborative development workflows.
+* Strong problem\-solving skills and the ability to work in a fast\-paced environment.
+* Excellent communication and collaboration skills.
+
+
+**Preferred Qualifications:**
+* Experience in Ad Tech or working with advertising platforms.
+* Familiarity with Facebook API and other social media platform integrations.
+* Knowledge of cloud services (AWS, GCP, Azure) and containerization (Docker, Kubernetes).
+* Familiarity with Agile development methodologies.",Software Development,https://il.linkedin.com/company/frontstory,https://media.licdn.com/dms/image/v2/C4D0BAQE1GHWZEZ1GuA/company-logo_100_100/company-logo_100_100/0/1630466380245/omg_studios_logo?e=2147483647&v=beta&t=Si0hbreik7D1wvfYIAsNehWao1Zi8wJMV5UgjmKWoiM,,,,,,,,,,,
+15,li-4270692530,linkedin,https://www.linkedin.com/jobs/view/4270692530,,Backend Developer,Anchor,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-07-21,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"We're on the lookout for an exceptional Backend Engineer to join our team and become a key player in shaping the future of our products and company. This is your chance to be a significant building block at this thrilling and pivotal moment before we soar to even greater heights.
+
+
+
+
+ Responsibility:
+
+
+
+
+* Scope, design, and implement high\-performance APIs and services
+* Collaborate with engineers and product managers to deliver robust solutions in short development iterations
+* Develop maintainable and clean code with heavy reliance on developer testing
+* Make thoughtful trade\-offs that consider business priorities, user needs, and a sustainable technical foundation
+
+
+ Requirements:
+
+
+
+
+* An experienced Backend Engineer with a minimum of 4 years in the field
+* Knowledge in Go / Typescript \- Big advantage
+* Experience in system architecture and design \- a plus
+* Experience with processes such as TDD / Extreme Programming / Kanban \- a big plus.
+* Experience with GCP, AWS, or other cloud providers \- a plus
+* Familiarity with database systems (e.g., PostgreSQL)\- a big plus.
+* Experience in designing, prioritizing and leading software projects \- a plus
+* Can juggle at least three flaming chainsaws while riding a unicycle
+* B.Sc. in Computer Science (or equivalent).
+
+
+ Extra:
+
+
+
+
+* Experience working in a startup company",Financial Services,https://www.linkedin.com/company/say-anchor,https://media.licdn.com/dms/image/v2/C4D0BAQEe7Oqy-M7jBQ/company-logo_100_100/company-logo_100_100/0/1638280751939/say_anchor_logo?e=2147483647&v=beta&t=bKoHhTj4RtW8UuUwgyCQV1jJqrH-LAMT3mxQZfb9QMI,,,,,,,,,,,
+16,li-4280556151,linkedin,https://www.linkedin.com/jobs/view/4280556151,https://www.comeet.com/jobs/applift/39.00A/backend-developer/2E.450?coref=1.11.pB9_D615&urlHash=_d3h,Backend Developer,Applift,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-07-12,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**Overview**
+
+
+
+
+ Applift is seeking a Backend Developer with a passion for the mobile app industry and a desire to become part of a rapidly growing tech company, working with the latest technologies.
+
+
+
+
+
+
+
+
+
+
+**About the company**
+
+
+
+
+ Considered by many to be the world’s best app marketing agency, Applift combines advanced AI technologies with unique marketing strategies to ensure apps receive a constant stream of new and relevant users.
+
+
+
+
+ By continuously analyzing and generating app store trends, our team of app marketing experts ensures that apps appear as the top search result for what most potential users search.
+
+
+
+
+ Recognized as an industry standard for apps in 2025, Applift helps top app studios across all industries expand their user base and achieve their app’s full potential.
+
+
+
+
+
+
+
+
+
+
+**The Opportunity**
+
+
+
+* Develop new backend features and design architectures in our leading product.
+* Build and maintain scalable, efficient, and elegant micro\-services.
+* Write clean, functional, and efficient code.
+* Work on a high\-scale, production\-grade platform used by top industry companies.
+* Uphold the highest coding standards in your work.
+* Develop features end\-to\-end, from requirements to production, while collaborating with product managers and the development team.
+* Resolve production issues and monitor our applications in the production environment.
+* Configure and maintain a production\-ready Kubernetes cluster.
+* Research new technologies that could enhance our tech stack.
+* Participate in daily standup meetings and other Scrum\-related ceremonies.",Marketing Services,https://www.linkedin.com/company/applift-agency,https://media.licdn.com/dms/image/v2/D4D0BAQGEzIQW7-HtBg/company-logo_100_100/B4DZXsFn0GHIAQ-/0/1743422652021/applift_agency_logo?e=2147483647&v=beta&t=mitvPZXlVapfBtt4qdoGnCe4PvkeIIrZ19plLj7Qr10,,,,,,,,,,,
+17,li-4280554318,linkedin,https://www.linkedin.com/jobs/view/4280554318,,Back End Developer,WINN.AI,"Ramat Gan, Tel Aviv District, Israel",2025-07-12,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"WINN.AI is a rapidly growing startup, backed by leading VCs, revolutionizing the future of work with our real\-time AI assistant. We're building cutting\-edge solutions used by thousands of customers worldwide, and we're looking for a talented Backend Developer to join our dynamic team and help us scale our platform and expand our impact.
+
+
+
+
+ The role involves:
+
+
+
+* Design and develop robust, scalable, and secure backend services and APIs using TypeScript and MongoDB. You will be responsible for the full software development lifecycle, from initial design to deployment and maintenance.
+* Architect and implement end\-to\-end solutions that meet the evolving needs of our customers. This includes working closely with product managers, frontend developers, and other stakeholders to translate requirements into technical solutions.
+* Ensure the quality and reliability of our systems through comprehensive testing and monitoring. You will be responsible for writing unit, integration, and end\-to\-end tests, and for proactively identifying and addressing potential performance bottlenecks and security vulnerabilities.
+* Take ownership of your work, driving projects from conception to completion.
+* Work effectively with a cross\-functional team as well as being independent by taking ownership of your work with end\-to\-end responsibilities
+* Work with cloud\-based technologies (Kubernetes, Docker, GitHub Actions, etc.) to deploy and manage our applications",Software Development,https://il.linkedin.com/company/winnai,https://media.licdn.com/dms/image/v2/C4D0BAQE0GCAoewcSqA/company-logo_100_100/company-logo_100_100/0/1662724824942/winnai_logo?e=2147483647&v=beta&t=CltkIkvRMzokuyQcuovQbYYNPoJv7sMRYpkCOVG0Qmw,,,,,,,,,,,
+18,li-4264151089,linkedin,https://www.linkedin.com/jobs/view/4264151089,https://www.zemingo.com/positions/open?positionId=C9.252&coref=1.11.p40_9411&urlHash=LIKh,Backend Developer,Zemingo,"Ramat Gan, Tel Aviv District, Israel",2025-07-08,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"Zemingo designs \& develops digital products (that create a digital customer experience) for tech\-companies, based in Israel with offices in New York City.
+
+
+
+
+ We are looking for a
+ **Backend Developer**
+ to join our team.
+
+
+
+
+ Requirements:
+
+
+
+
+* At least 3 years of practical experience in Java development (Java 11 and above).
+* In\-depth knowledge of the Spring Framework (Spring Boot, Spring Security, etc.).
+* Strong understanding of data structures and algorithms.
+* Experience with relational databases (SQL).
+* Familiarity with cloud services (AWS, Azure).
+* Experience with CI/CD tools (e.g., Jenkins, SourceTree, Git).
+* Use of task management tools (e.g., Jira).
+* Strong understanding of network protocols and RESTful APIs.
+* Ability to solve complex technological problems creatively and quickly.
+* Good interpersonal communication skills and the ability to work in a team.
+* Attention to detail and ability to manage multiple tasks simultaneously.
+* Willingness to continuously learn and stay updated with new technologies.
+* This position is located at Herzeliya\*\*",Software Development,https://il.linkedin.com/company/zemingo-mobile-group,https://media.licdn.com/dms/image/v2/D4D0BAQG7c7m0nymL-g/company-logo_100_100/company-logo_100_100/0/1693387258836?e=2147483647&v=beta&t=5ZPM5na-YAx3AGeBuAuN2MHlzBAW2UZnmdpPAyKmPjk,,,,,,,,,,,
+19,li-4264149242,linkedin,https://www.linkedin.com/jobs/view/4264149242,https://www.comeet.com/jobs/appsforce/09.00C/full-stack-developer/9F.85B?coref=1.11.pE0_E61E&urlHash=QxiD,Full Stack Developer,Appsforce,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-07-08,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"We are looking for a passionate Full Stack \- to join our all\-star team!
+
+
+
+
+ As part of your role, you will design the architecture, develop, and deploy new SaaS platform from scratch, working closely with the product, design, and QA teams to deliver the best product.
+
+
+
+
+ At Appsforce you will lead the way to be in the most cutting edge technologies, with our elite development team, you will help our customers to be at the forefront of their fields.
+
+
+
+
+**Responsibilities:**
+* Work closely with Product Managers, Architects, DevOps, UI/UX, and other tech leads from our game teams.
+* Ensure the performance, quality, and responsiveness of applications.
+* Troubleshoot and debug applications.
+* Collaborate with UX/UI designers, QA Engineers, and other developers to create effective solutions.
+
+
+ Requirements:
+
+
+
+
+* 3\+ years of experience in Python / Node
+* 3\+ years of experience in React.js
+* Strong experience in cloud environment AWS \& Serverless\- Advantage
+* Experience with modern CI/CD pipelines
+* Proactive by nature, internal drive for excellence and improvement",Software Development,https://il.linkedin.com/company/appsforceio,https://media.licdn.com/dms/image/v2/C4D0BAQGbR9-uFG8rSw/company-logo_100_100/company-logo_100_100/0/1638376978779/appsforceio_logo?e=2147483647&v=beta&t=muGYPiyAZksGyNGuRV11bXOwUllIqPZ81nzPNv3g_2o,,,,,,,,,,,
+20,li-4171067034,linkedin,https://www.linkedin.com/jobs/view/4171067034,https://www.tikalk.com/career/backend-engineer-1f.141/#?coref=1.11.pFC_6ED&urlHash=uson,Backend Engineer,Tikal,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-02-28,fulltime,,,,,,False,not applicable,Engineering and Information Technology,,,"Being a ""Tikalist"" means entering a career journey, focusing on three main key areas:
+
+
+
+
+* Professional development \- continuously getting to know new Backend technologies, and delving deeper into the technologies you are interested in.
+* Knowledge sharing\- group meeting every two weeks at which we share knowledge and discuss challenges. We also hold regular lectures and presentations both internally and externally in our ""Israeli Tech Radar"" community.
+* Becoming a Senior Backend Engineer\- improving personal skills, such as self\-management, growing their influence on their peers, presentation skills, and even running a dedicated technology leadership course for employees who are at this stage.
+
+
+ All this is set out in a personal roadmap, which also identifies who in the company can help them, and any other ways in which Tikal can support them in achieving their goals.
+
+
+
+
+**Responsibilities:**
+* Testing and Debugging: write unit tests, perform integration testing, and debug code
+* Data structures
+* Develop and implement robust APIs
+* Leveraging industry best practices and standards, while ensuring flexibility, extensibility, and maintainability
+* Implement data persistence solutions using both SQL and NoSQL databases,data modeling
+* Cloud\-based infrastructures
+
+
+**Learn:**
+ Create your own personal roadmap\-
+
+
+
+
+* Choose what you want and need to learn
+* Work with a mentor to take you there
+* Get all the needed knowledge
+* Practice hands\-on to ""walk the talk""
+
+
+ Requirements:
+
+
+
+
+* 4\+ years of experience in Backend engineering
+* Proficient with Python (\+Java / Scala / NodeJS )
+* Experience in Distributed Techniques (Microservices, Reactive Programming, Distributed Processing, Messaging)
+* Experience in Cloud Services (AWS, OpenStack, GCP or Azure)
+* Experience in one of NoSQL Technologies (e.g. MongoDB, ElasticSearch, Druid, Redis)",Software Development,https://il.linkedin.com/company/tikal-knowledge,https://media.licdn.com/dms/image/v2/D4D0BAQFWIXwUifOWuQ/company-logo_100_100/company-logo_100_100/0/1722750326315/tikal_knowledge_logo?e=2147483647&v=beta&t=u_MyO11dIcPt9SINmw5dTSyU4-GIb6nN8cyc4SSQ1ew,,,,,,,,,,,
+21,li-4126052970,linkedin,https://www.linkedin.com/jobs/view/4126052970,https://www.prompt.security/careers?coref=1.11.p1B_E217&urlHash=1deA,Backend Developer,Prompt Security,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-01-14,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"**About Us:**
+ At Prompt Security, our mission is to empower organizations to safely harness the transformative power of Generative AI. As a one\-stop security platform, we provide visibility, governance, and real\-time protection against all Generative AI concerns, enabling organizations to innovate and prosper in the age of AI without compromising on security.
+
+
+
+
+**What we’re looking for:**
+**﻿**
+ Join our new Sensors Team, where you’ll build the lightweight security components that power our AISPM (Advanced Intelligent Security Policy Management) platform. This includes developing core sensors and enforcement mechanisms that operate across diverse environments—from endpoints and browsers to production workloads—enabling real\-time, adaptive security. You’ll collaborate with expert engineers, tackle high\-impact security challenges, and expand your expertise in Generative AI security, helping to shape the next generation of protection at scale.
+
+
+
+
+**What you will do:**
+* Continuously optimize sensor components for minimal system footprint, ensuring high performance, low resource consumption, and maximum reliability.
+* Contribute to the evolution of AISPM by helping design adaptive policy logic, improving decision engines, and expanding coverage across platforms.
+* Build endpoint solutions focused on security, integrating them with our platform for real\-time threat detection and data protection.
+* Collaborate with security engineers, QA, and product teams to reach customer/business goals.
+* Stay current with the latest developments in Generative AI and platform security, incorporating relevant advancements into our agents and extensions.
+
+
+**﻿Requirements:**
+* At least 4 years of experience with Python or NodeJS
+* Proficiency in browser extension development (Chrome, Firefox, etc.) \- Advantage
+* Experience with macOS and Windows Endpoint Security \- Advantage
+* Background in developing CSPM/AISPM/DSPM \- Advantage
+* Excellent problem\-solving skills and attention to detail
+* Proactive attitude and ability to thrive in a dynamic startup environment
+
+
+ This role offers a unique opportunity to leverage your security engineering expertise, work at the intersection of AI and cybersecurity, and contribute to building scalable, next\-generation security solutions that empower organizations to protect their Generative AI apps in a brand\-new threat landscape.",Computer and Network Security,https://www.linkedin.com/company/promptsec,https://media.licdn.com/dms/image/v2/D4D0BAQHbHZiUWTZ3uA/company-logo_100_100/B4DZfqvyYaGYAU-/0/1751990085555/promptsec_logo?e=2147483647&v=beta&t=KAuZFzB4oLeej0qThDwccpIg5jeE876ozmInd9ybkyI,,,,,,,,,,,
+22,li-4124708520,linkedin,https://www.linkedin.com/jobs/view/4124708520,https://www.evinced.com/careers/javascript-algorithm-engineer?t=1755534138977&coref=1.11.pC5_E217&urlHash=DocF,JavaScript Algorithm Engineer,Evinced,"Tel Aviv-Yafo, Tel Aviv District, Israel",2025-01-13,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"We know the title says \- “About Us”. But really, it’s all about you.
+
+
+
+
+ At Evinced, we believe the way to make a true difference starts with our team, people passionate about solving complex technical challenges and creating a positive impact.
+
+
+
+
+ Forget about the buzzwords, want to work on products that break barriers and build an inclusive digital space?
+
+
+
+
+ At Evinced, you’ll be developing disruptive new ways for developers to build accessible web and mobile apps that work for everyone, by developing AI\-enabled tools and frameworks that find, cluster, and track accessibility problems automatically, saving developers time and reducing risk.
+
+
+
+
+ Ready to make your impact on different products, the roadmap, and most importantly \- on billions of people worldwide who experience disabilities?
+
+
+
+
+ It’s more than a job, it's a mission.
+
+
+
+
+**Your Team:**
+ We are offering you to take a vital role in our research team that is responsible for constantly driving forward our ability to detect accessibility issues, enhancing the intelligence of our platform to provide customers with insights and usability enhancements that allow them to work more efficiently, and building innovative new products
+
+
+
+
+ To achieve those ends the team employs classic algorithms, data analysis, machine learning and generative AI.
+
+
+
+
+ You will be joining a team of highly professional and innovative engineers and scientists that are driven by passion for the domain and the mission of the company. We value scientific and engineering excellence, are committed to creating high impact products that reach our customers and work in collaboration with each other in an egoless environment.
+
+
+
+
+**Your Impact:**
+* Research, design and implement new detection algorithms for web accessibility issues and improve existing ones.
+* Ensure all research is well documented and reproducible.
+* Build and enhance tools that enable data collection, labeling and analysis at scale for research purposes.
+* Integrate new models and algorithms into existing products.
+* Build interfaces for projects in the POC phase to enable demonstration and the collection of feedback from internal users and select design partners.
+
+
+ Requirements:
+
+
+
+
+**Your Qualities:**
+* ﻿3\+ years of experience in modern web\-scale runtimes/languages, specifically Node (Typescript/JavaScript).
+* Ability to write and reason about clean and modular code.
+* Experience with front\-end web development including component development \- advantage.
+* Experience with accessibility \- advantage.
+* Experience working with data science/research/AI teams \- advantage.
+* BA / BSc in computer science or a quantitative field (Industrial Engineering and Management / Information Systems / Economics / Statistics / Mathematics / Biology / Physics / Chemistry) or an equivalent experience.
+
+
+**We’re based in Tel Aviv, 5 minutes from Hashalom train station, and Yehudit light train station, and we have our own parking lot. We work in a hybrid mode, with flexible working hours.**",Software Development,https://www.linkedin.com/company/evinced,https://media.licdn.com/dms/image/v2/C560BAQHz2hd8O9EYSg/company-logo_100_100/company-logo_100_100/0/1655886461918/evinced_logo?e=2147483647&v=beta&t=JU-IrIx6rEUFeqrBMCz6CASQ5DwHaL1EElSINCMkDr0,,,,,,,,,,,
+23,li-4113716724,linkedin,https://www.linkedin.com/jobs/view/4113716724,https://vastdata.com/careers/co/tel-aviv/D8.700/backend-developer-python-expert/all?coref=1.11.pE4_939&urlHash=00mR,Backend Developer – Python Expert,VAST Data,"Tel Aviv-Yafo, Tel Aviv District, Israel",2024-12-31,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"VAST Data is looking for a Python Expert to join our growing team!
+
+
+
+
+ This is a great opportunity to be part of one of the fastest\-growing infrastructure companies in history, an organization that is in the center of the hurricane being created by the revolution in artificial intelligence.
+
+
+
+
+**""VAST's data management vision is the future of the market.""\- Forbes**
+ VAST Data is the data platform company for the AI era. We are building the enterprise software infrastructure to capture, catalog, refine, enrich, and protect massive datasets and make them available for real\-time data analysis and AI training and inference. Designed from the ground up to make AI simple to deploy and manage, VAST takes the cost and complexity out of deploying enterprise and AI infrastructure across data center, edge, and cloud.
+
+
+
+
+ Our success has been built through intense innovation, a customer\-first mentality and a team of fearless VASTronauts who leverage their skills \& experiences to make real market impact. This is an opportunity to be a key contributor at a pivotal time in our company’s growth and at a pivotal point in computing history.
+
+
+
+
+ Requirements:
+
+
+
+
+ Work in a team of top\-of\-the\-line software engineers, developing state\-of\-the\-art management systems for managing mission\-critical enterprise\-level data platforms.
+
+
+
+
+ VAST Data’s management systems include:
+
+
+
+
+* A highly scalable platform featuring complex high\-availability mechanisms, and advanced APIs, interoperable with a diverse software ecosystem.
+* A cutting\-edge AI\-based cloud\-operated SaaS.
+
+
+**Requirements**
+ Proven experience in server\-side Python programming, featuring: multi\-threading, multi\- processing, communication protocols, databases.
+
+
+
+
+ Background development of management systems or other kind of enterprise or cloud based high\-scale systems
+
+
+
+
+ Proficient in Linux environment
+
+
+
+
+ Experience in development of network, storage, server or virtualization management systems — an advantage
+
+
+
+
+ Full\-stack capabilities featuring Web UI technologies — an advantage
+
+
+
+
+ Fast learner, team player, dedicated, accurate design and coding capabilities
+
+
+
+
+ Location: Tel Aviv",Software Development,https://www.linkedin.com/company/vast-data,https://media.licdn.com/dms/image/v2/D560BAQGcSDxUoaDyTw/company-logo_100_100/company-logo_100_100/0/1682270564881/vast_data_logo?e=2147483647&v=beta&t=5MUd1-H5OC20vzMkex70kJ50ZZhNUch6kwrYwO-dBbY,,,,,,,,,,,
+24,li-4113720237,linkedin,https://www.linkedin.com/jobs/view/4113720237,https://www.comeet.com/jobs/vastdata/43.001/frontend-developer/89.D04?coref=1.11.p02_AF8&urlHash=lU7Q,Frontend Developer,VAST Data,"Tel Aviv-Yafo, Tel Aviv District, Israel",2024-12-31,fulltime,,,,,,False,not applicable,Engineering and Information Technology,,,"VAST Data is looking for a GUI Developer to join our growing team!
+
+
+
+
+ This is a great opportunity to be part of one of the fastest\-growing infrastructure companies in history, an organization that is in the center of the hurricane being created by the revolution in artificial intelligence.
+
+
+
+
+**""VAST's data management vision is the future of the market.""\- Forbes**
+ VAST Data is the data platform company for the AI era. We are building the enterprise software infrastructure to capture, catalog, refine, enrich, and protect massive datasets and make them available for real\-time data analysis and AI training and inference. Designed from the ground up to make AI simple to deploy and manage, VAST takes the cost and complexity out of deploying enterprise and AI infrastructure across data center, edge, and cloud.
+
+
+
+
+ Our success has been built through intense innovation, a customer\-first mentality and a team of fearless VASTronauts who leverage their skills \& experiences to make real market impact. This is an opportunity to be a key contributor at a pivotal time in our company’s growth and at a pivotal point in computing history.
+
+
+
+
+ Requirements:
+
+
+
+
+ Work in a team of top\-of\-the\-line software engineers, developing state\-of\-the\-art management systems for managing mission\-critical enterprise\-level data platforms.
+
+
+
+
+ VAST Data’s management systems include:
+
+
+
+
+* A highly scalable platform featuring complex high\-availability mechanisms, and advanced APIs, interoperable with a diverse software ecosystem.
+* A cutting\-edge AI\-based cloud\-operated SaaS.
+
+
+**Hard\-skills MUST requirements:**
+* Experience in Javascript programming and related frameworks
+* 2\-3 years Experience in Angular(preferred) and/or ReactJS
+
+
+**Advantages:**
+* Development experience in Databases, protocols (REST), Cloud\-related software, high\-scale systems
+* Experience with typescript, nodejs, charting libraries, data grids, canvas api
+* Understanding reactive programming (RxJS)
+* Mobile application development (Flutter)
+* Full\-stack capabilities (e.g. Python)",Software Development,https://www.linkedin.com/company/vast-data,https://media.licdn.com/dms/image/v2/D560BAQGcSDxUoaDyTw/company-logo_100_100/company-logo_100_100/0/1682270564881/vast_data_logo?e=2147483647&v=beta&t=5MUd1-H5OC20vzMkex70kJ50ZZhNUch6kwrYwO-dBbY,,,,,,,,,,,
+25,li-4113721781,linkedin,https://www.linkedin.com/jobs/view/4113721781,https://www.comeet.com/jobs/appsforce/09.00C/backend-developer/75.F48?coref=1.11.p66_C216&urlHash=jSCg,Backend Developer,Appsforce,"Tel Aviv-Yafo, Tel Aviv District, Israel",2024-12-31,fulltime,,,,,,False,mid-senior level,Engineering and Information Technology,,,"We are looking for a Backend Software Engineer to join our team!
+
+
+
+
+ At Appsforce you will lead the way to be in the most cutting edge technologies, with our elite development team, you will help our customers to be at the forefront of their fields.
+
+
+
+
+**Responsibilities:**
+* Designing, building, and scaling new product features and backend services from scratch using cutting\-edge technologies
+* Driving technological and architectural decisions
+* Building world\-class engineering standards, tools, and processes
+
+
+ Requirements:
+
+
+
+
+* 3\+ years experience developing backend systems – Must
+* Knowledge, experience and proficiency with Go – Must
+* Extensive experience with large\-scale databases (e.g. PostgreSQL, InfluxDB, Neo4j) – Advantage
+* Familiarity with microservices architecture and cloud design patterns – Advantage
+* Broad knowledge of the container ecosystem and orchestration tools, including Docker, Kubernetes \- Advantage
+* Experience with AWS cloud services – Advantage
+* Experience with REST API, gRPC, message brokers (such as Kafka), streams and server\-side APIs integration – Advantage
+* Experience in cyber security, Linux \& Networking – Advantage",Software Development,https://il.linkedin.com/company/appsforceio,https://media.licdn.com/dms/image/v2/C4D0BAQGbR9-uFG8rSw/company-logo_100_100/company-logo_100_100/0/1638376978779/appsforceio_logo?e=2147483647&v=beta&t=muGYPiyAZksGyNGuRV11bXOwUllIqPZ81nzPNv3g_2o,,,,,,,,,,,
