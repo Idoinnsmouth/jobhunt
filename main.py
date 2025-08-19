@@ -1,4 +1,7 @@
+import os
+
 import pandas as pd
+import keyring
 from jobspy import scrape_jobs, JobResponse
 from pandas import DataFrame
 
@@ -8,24 +11,27 @@ from os_stuff import notify_and_open_report
 
 
 def run():
-    # jobs_data = scrape_jobs(
-    #     # glassdoor isn't working
-    #     site_name=["linkedin", "indeed", "google"],
-    #     search_term="python fullstack developer",
-    #     google_search_term="python fullstack developer in tel aviv since yesterday",
-    #     location="Tel aviv, Israel",
-    #     country_indeed="israel",
-    #     linkedin_fetch_description=True,
-    # )
+    jobs_data = scrape_jobs(
+        # glassdoor, google isn't working
+        site_name=["linkedin"],
+        search_term="python fullstack developer",
+        google_search_term="python fullstack developer in tel aviv since yesterday",
+        location="Tel aviv, Israel",
+        country_indeed="Israel",
+        linkedin_fetch_description=True,
+        hours_old=24,
+        proxies=get_proxys()
+    )
 
-    jobs_data = pd.read_csv('a.csv')
-    jobs_data.head()
+    # example set of data
+    # jobs_data = pd.read_csv('a.csv')
+    # jobs_data.head()
 
     # -------------------------------------
     jobs = load_jobs_to_classes(jobs_data=jobs_data)
     report_name = create_report(jobs=jobs)
 
-    notify_and_open_report()
+    notify_and_open_report(report_name)
 
 
 def load_jobs_to_classes(jobs_data: DataFrame):
@@ -50,6 +56,15 @@ def load_jobs_to_classes(jobs_data: DataFrame):
 
     return jobs
 
+def get_proxys() -> list[str]:
+    PORT = "1080"
+    with open("env/proxies.txt", "r") as f:
+        ips = f.read().split(",")
+
+    username = keyring.get_password("nordvpn1", "username")
+    password = keyring.get_password("nordvpn1", "password")
+
+    return [f"socks5://{username}:{password}@{ip}:{PORT}" for ip in ips]
 
 
 if __name__ == "__main__":

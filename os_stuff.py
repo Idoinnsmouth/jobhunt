@@ -10,6 +10,6 @@ def notify_and_open_report(report_name: str):
         "Generated new job reports",
         title="Job Reports",
         sound="glass",
-        execute=f"say 'Master Noy, you job report is ready' | open {file_path}"
+        execute=f"open {file_path}"
     )
 
