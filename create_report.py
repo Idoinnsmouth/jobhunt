@@ -20,7 +20,7 @@ COLUMNS = {
     "is_remote": "Remote",
 }
 
-def create_report(jobs: list[Job]):
+def create_report(jobs: list[Job]) -> str:
     df = pd.DataFrame([asdict(job) for job in jobs])[list(COLUMNS.keys())]
 
     df.rename(columns=COLUMNS, inplace=True)
@@ -30,6 +30,8 @@ def create_report(jobs: list[Job]):
     name = f"job_report_{time.day}-{time.month}-{time.year}"
     df.to_excel(f"reports/{name}.xlsx", index=False)
     _post_creation_changes(name)
+
+    return name
 
 
 def _post_creation_changes(report_name: str):

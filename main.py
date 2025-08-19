@@ -4,6 +4,7 @@ from pandas import DataFrame
 
 from create_report import create_report
 from job import Job
+from os_stuff import notify_and_open_report
 
 
 def run():
@@ -22,7 +23,9 @@ def run():
 
     # -------------------------------------
     jobs = load_jobs_to_classes(jobs_data=jobs_data)
-    create_report(jobs=jobs)
+    report_name = create_report(jobs=jobs)
+
+    notify_and_open_report()
 
 
 def load_jobs_to_classes(jobs_data: DataFrame):
