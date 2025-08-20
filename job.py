@@ -1,3 +1,4 @@
+import logging
 from dataclasses import dataclass
 
 from job_analysis import score_job_description
@@ -34,7 +35,9 @@ class Job:
 
         try:
             _rating = score_job_description(self.desc).score
-        except:
+        except Exception as e:
+            _rating = 0
+            logging.exception(e)
             pass
 
-        self.rating = 0
+        self.rating = _rating
