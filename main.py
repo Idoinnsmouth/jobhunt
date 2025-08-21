@@ -24,7 +24,9 @@ def run():
     )
 
     # example set of data
-    # jobs_data = pd.read_csv('a.csv')
+    # script_dir = os.path.dirname(os.path.abspath(__file__))
+    # file_path = os.path.join(script_dir, 'a.csv')
+    # jobs_data = pd.read_csv(file_path)
     # jobs_data.head()
 
     # -------------------------------------

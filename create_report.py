@@ -1,3 +1,4 @@
+import os
 from dataclasses import asdict
 from datetime import datetime
 
@@ -29,14 +30,18 @@ def create_report(jobs: list[Job]) -> str:
 
     time = datetime.now()
     name = f"job_report_{time.day}-{time.month}-{time.year}"
-    df.to_excel(f"reports/{name}.xlsx", index=False)
+
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    df.to_excel(f"{os.path.join(script_dir)}/reports/{name}.xlsx", index=False)
     _post_creation_changes(name)
 
     return name
 
 
 def _post_creation_changes(report_name: str):
-    wb = load_workbook(f"reports/{report_name}.xlsx")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    wb = load_workbook(f"{os.path.join(script_dir)}/reports/{report_name}.xlsx")
     ws = wb.active
 
     for idx, row in enumerate(ws.iter_rows()):
@@ -65,4 +70,4 @@ def _post_creation_changes(report_name: str):
                      top=Side(style='thin'),
                      bottom=Side(style='thin'))
 
-    wb.save(f"reports/{report_name}.xlsx")
+    wb.save(f"{os.path.join(script_dir)}/reports/{report_name}.xlsx")
