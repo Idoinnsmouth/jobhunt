@@ -12,7 +12,6 @@ from os_stuff import notify_and_open_report
 
 def run():
     jobs_data = scrape_jobs(
-        # glassdoor, google isn't working
         site_name=["linkedin"],
         search_term="python fullstack developer",
         google_search_term="python fullstack developer in tel aviv since yesterday",
@@ -20,6 +19,7 @@ def run():
         country_indeed="Israel",
         linkedin_fetch_description=True,
         hours_old=24,
+        results_wanted=50,
         proxies=get_proxys()
     )
 
@@ -66,7 +66,7 @@ def get_proxys() -> list[str]:
     username = keyring.get_password("nordvpn1", "username")
     password = keyring.get_password("nordvpn1", "password")
 
-    return [f"socks5://{username}:{password}@{ip}:{PORT}" for ip in ips]
+    return [f"socks5h://{username}:{password}@{ip}:{PORT}" for ip in ips]
 
 
 if __name__ == "__main__":

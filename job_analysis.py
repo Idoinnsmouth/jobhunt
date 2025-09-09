@@ -30,8 +30,10 @@ KEYWORDS_CONFIG: Dict[str, int] = {
     "cicd": 35, "circleci": 25, "mysql": 25, "sql": 30, "cloud": 30, "heroku": 15,
     "serverless": 15, "lambda": 15, "react": 25, "typescript": 20, "javascript": 15,
     "ember": 10, "fullstack": 15, "api": 10, "postgresql": 15, "rest": 10,
+    "gcp": -10,
     "node": -10, "go": -50, "java": -50, "csharp": -50, "vue": -50, "kubernetes": -200,
-    "angular": -1000, "php": -1000, "wordpress": -1000, "drupal": -1000,
+    "angular": -1000, "php": -1000, "wordpress": -1000, "drupal": -1000, "ruby": -1000,
+    "web3": -1000,
 }
 MUST_HAVE: Set[str] = {"python"}
 HARD_AVOID: Set[str] = {k for k, v in KEYWORDS_CONFIG.items() if v <= -1000}
