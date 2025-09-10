@@ -1,42 +1,10 @@
-# job_scorer.py
-from __future__ import annotations
 import re
-from dataclasses import dataclass
-from typing import Dict, List, Tuple, Set, Optional
-
 from rank_bm25 import BM25Okapi
+from rapidfuzz import fuzz, process as rf_process
 
-
-from rapidfuzz import fuzz, process as rf_process  # type: ignore
-
-
-import spacy  # only if you want token-aware matching
-_NLP = spacy.blank("en")  # lightweight tokenizer; no models needed
-
-
-# -------------------------
-# Config
-# -------------------------
-SECTION_HEADERS: Dict[str, List[str]] = {
-    "requirements": ["requirements", "qualifications", "must have", "what we’re looking for", "what we're looking for"],
-    "responsibilities": ["responsibilities", "what you’ll do", "what you'll do", "your role"],
-    "about": ["about", "about us", "who we are", "tech stack", "our stack", "our technology stack"],
-}
-
-SECTION_WEIGHTS: Dict[str, float] = {"requirements": 1.0, "responsibilities": 0.7, "about": 0.3}
-
-KEYWORDS_CONFIG: Dict[str, int] = {
-    "python": 50, "flask": 40, "redis": 35, "aws": 45, "microservices": 45, "backend": 40,
-    "cicd": 35, "circleci": 25, "mysql": 25, "sql": 30, "cloud": 30, "heroku": 15,
-    "serverless": 15, "lambda": 15, "react": 25, "typescript": 20, "javascript": 15,
-    "ember": 10, "fullstack": 15, "api": 10, "postgresql": 15, "rest": 10,
-    "gcp": -10,
-    "node": -10, "go": -50, "java": -50, "csharp": -50, "vue": -50, "kubernetes": -200,
-    "angular": -1000, "php": -1000, "wordpress": -1000, "drupal": -1000, "ruby": -1000,
-    "web3": -1000,
-}
-MUST_HAVE: Set[str] = {"python"}
-HARD_AVOID: Set[str] = {k for k, v in KEYWORDS_CONFIG.items() if v <= -1000}
+from config.job_scoring_config import SECTION_HEADERS, KEYWORDS_CONFIG, MUST_HAVE, HARD_AVOID, SOFT_CUES, STRONG_CUES, \
+    EXAMPLE_CUES
+from models.job_analysis import ScoreResult
 
 NORMALIZE_VARIANTS = [
     (re.compile(r"\bci\s*/\s*cd\b", re.I), "cicd"),
@@ -46,14 +14,14 @@ NORMALIZE_VARIANTS = [
     (re.compile(r"\bc#\b", re.I), "csharp"),
 ]
 
-# -------------------------
-# Soft/strong cues
-# -------------------------
-STRONG_CUES = re.compile(r"\b(required|must[-\s]*have|hands[-\s]*on|proficient|experience with|strong)\b", re.I)
-SOFT_CUES   = re.compile(r"\b(familiarity|exposure|nice to have|preferred|bonus|a plus)\b", re.I)
-EXAMPLE_CUES = re.compile(r"\b(e\.g\.|such as|including)\b", re.I)
-
 def sentence_strength_multiplier(text: str) -> float:
+    """We want to give more/less weight to each sentence additional weight based on
+        cues we find in it.
+        for example:
+        'strong experience with python' will have multiplayer of 1.0 - so it will get the full weight of the word python
+        'nice to have experience with python' will have a multiplayer of 0.35 - so the weight of the python keyword
+        will be lowered
+    """
     mult = 1.0
     if SOFT_CUES.search(text):
         mult *= 0.35
@@ -63,7 +31,16 @@ def sentence_strength_multiplier(text: str) -> float:
         mult *= 0.5
     return mult
 
-def split_requirement_sentences(req_text: str) -> List[str]:
+def split_requirement_sentences(req_text: str) -> list[str]:
+    """Simply split the requirements part of the job desc into sentences
+        first it breaks the text by common used list delimiters
+        then it splits the lines into sentences
+
+        Example:
+            "• 3–5 years experience\\n- React/Next.js. * Node.js, Python? REST/GraphQL"
+            will return
+            ['3–5 years experience', 'React/Next.js.', 'Node.js, Python?', 'REST/GraphQL']
+    """
     lines = re.split(r"(?:\n|\r|•|\*|- )+", req_text)
     sentences = []
     for ln in lines:
@@ -75,18 +52,23 @@ def split_requirement_sentences(req_text: str) -> List[str]:
     return sentences
 
 def adjust_negative_for_or_group(sent: str, base_penalty: float) -> float:
+    """This will adjust back up a score weight of an or group
+    example: 'java or python'
+    """
     if re.search(r"\bor\b", sent, re.I):
         return base_penalty * 0.5
     return base_penalty
 
 def soft_cap_negative(pen: float, is_soft: bool, cap: float = 50.0) -> float:
+    """This will cap the negative value of a keyword if the sentence has a soft cue
+        example:
+        "familiarity with java"
+        java has weight of -70 but since the sentence has a soft cue it will only score as -50
+    """
     if is_soft:
         return -min(abs(pen), cap)
     return pen
 
-# -------------------------
-# Token helpers
-# -------------------------
 def normalize_text(text: str) -> str:
     t = text.lower()
     for rx, repl in NORMALIZE_VARIANTS:
@@ -94,20 +76,30 @@ def normalize_text(text: str) -> str:
     t = re.sub(r"[^a-z0-9#+/]+", " ", t)
     return re.sub(r"\s+", " ", t).strip()
 
-def tokenize(text: str) -> List[str]:
+def tokenize(text: str) -> list[str]:
     return normalize_text(text).split()
 
-# -------------------------
-# Split sections
-# -------------------------
-def split_sections(raw_text: str) -> Dict[str, str]:
+def split_sections(raw_text: str) -> dict[str, str]:
+    """split the job description the sections based on SECTION_HEADERS so we can give weight adjustments
+    to keyword based on the section.
+    for example:
+    about the job:
+    aaa
+    requirements:
+    bbb
+
+    will return {"about": "aaa", "requirements: "bbb"}
+    """
+
     lower = raw_text.lower()
-    sections = {"requirements": "", "responsibilities": "", "about": ""}
-    header_map = {h: sec for sec, headers in SECTION_HEADERS.items() for h in headers}
+    sections = {key: "" for key in SECTION_HEADERS.keys()}
+    header_map = {h: sec for sec, job_descp in SECTION_HEADERS.items() for h in job_descp.headers}
     pattern = r"(" + "|".join(re.escape(h.lower()) for h in header_map) + r")"
     parts = re.split(pattern, lower)
+
     current_sec = "about"
     buffer = []
+
     for part in parts:
         if part in header_map:
             sections[current_sec] += " " + " ".join(buffer)
@@ -118,33 +110,31 @@ def split_sections(raw_text: str) -> Dict[str, str]:
     sections[current_sec] += " " + " ".join(buffer)
     return {k: v.strip() for k, v in sections.items()}
 
-# -------------------------
-# Keyword matching
-# -------------------------
-def keyword_hits(text: str, keywords: Dict[str, int], fuzzy_threshold: int = 90) -> Dict[str, int]:
+def keyword_hits(text: str, keywords: dict[str, int], fuzzy_threshold: int = 90) -> dict[str, int]:
+    """Find keyword hits in text, also use fuzzy matching to avoid scoring same positive keyword multiple times"""
     tokens = set(tokenize(text))
-    hits: Dict[str, int] = {}
-    for k, w in keywords.items():
-        if k in tokens:
-            hits[k] = w
-    if rf_process and fuzz:
-        candidates = [k for k, w in keywords.items() if w > 0 and k not in hits]
-        for tok in tokens:
-            match = None
-            score = 0
-            res = rf_process.extractOne(tok, candidates, scorer=fuzz.token_set_ratio)
-            if res:
-                match, score, _ = res
-            if match and score >= fuzzy_threshold:
-                hits.setdefault(match, keywords[match])
+    hits: dict[str, int] = {}
+
+    for keyword, weight in keywords.items():
+        if keyword in tokens:
+            hits[keyword] = weight
+
+
+    candidates = [keyword for keyword, weight in keywords.items() if weight > 0 and keyword not in hits]
+    for tok in tokens:
+        match = None
+        score = 0
+        res = rf_process.extractOne(tok, candidates, scorer=fuzz.token_set_ratio)
+        if res:
+            match, score, _ = res
+        if match and score >= fuzzy_threshold:
+            hits.setdefault(match, keywords[match])
     return hits
 
-# -------------------------
-# Requirements scorer (new)
-# -------------------------
-def score_requirements_section(req_text: str, keywords: Dict[str,int]) -> float:
+def score_requirements_section(req_text: str, keywords: dict[str,int]) -> float:
     total = 0.0
-    for sent in split_requirement_sentences(req_text):
+    sentences = split_requirement_sentences(req_text)
+    for sent in sentences:
         mult = sentence_strength_multiplier(sent)
         is_soft = mult < 1.0
         hits = keyword_hits(sent, keywords)
@@ -156,18 +146,8 @@ def score_requirements_section(req_text: str, keywords: Dict[str,int]) -> float:
             total += adj
     return total
 
-# -------------------------
-# BM25 fallback
-# -------------------------
-def bm25f_score(sections: Dict[str,str], query_terms: List[str]) -> float:
-    if BM25Okapi is None:
-        score = 0.0
-        qset = set(query_terms)
-        for sec, text in sections.items():
-            toks = tokenize(text)
-            tf = sum(1 for t in toks if t in qset)
-            score += SECTION_WEIGHTS.get(sec, 1.0) * tf
-        return score
+def bm25f_score(sections: dict[str,str], query_terms: list[str]) -> float:
+    """I'm using BM25 per section to also help with the score"""
     total = 0.0
 
     for sec, text in sections.items():
@@ -176,45 +156,44 @@ def bm25f_score(sections: Dict[str,str], query_terms: List[str]) -> float:
         toks = tokenize(text)
         bm25 = BM25Okapi([toks])
         sec_score = bm25.get_scores(query_terms)[0]
-        total += SECTION_WEIGHTS.get(sec, 1.0) * float(sec_score)
-    return total
+        total += SECTION_HEADERS.get(sec, 1.0).weight * float(sec_score)
 
-# -------------------------
-# Public API
-# -------------------------
-@dataclass
-class ScoreResult:
-    score: float
-    gates_passed: bool
-    fail_reason: Optional[str]
-    matched_by_section: Dict[str, Dict[str, int]]
-    bm25f: float
+    return total
 
 def score_job_description(
     raw_text: str,
-    keywords: Dict[str, int] = KEYWORDS_CONFIG,
-    must_have: Set[str] = MUST_HAVE,
-    hard_avoid: Set[str] = HARD_AVOID,
+    keywords: dict[str, int] = KEYWORDS_CONFIG,
+    must_have: set[str] = MUST_HAVE,
+    hard_avoid: set[str] = HARD_AVOID,
 ) -> ScoreResult:
     sections = split_sections(raw_text)
-    # Gates
+
+    # First gate the check if raw text has and avoid keyword
+    # todo - it may be better the only hard avoid if the keyword is in the requirements
     tokens = set(tokenize(raw_text))
     for term in hard_avoid:
         if term in tokens:
             return ScoreResult(-1000.0, False, f"hard_avoid:{term}", {}, 0.0)
+
+    # Another gate here if my "must have" requirements are missing from the requirements section
+    # currently it's only to check if the job has python in the description but I may evolve on this if
+    # I see good scores on jobs I really don't want
     req_tokens = set(tokenize(sections.get("requirements","")))
     if not must_have.issubset(req_tokens):
-        return ScoreResult(-999.0, False, "missing_must_have", {}, 0.0)
+        return ScoreResult(-1000.0, False, "missing_must_have", {}, 0.0)
 
-    # Section scoring
-    matched_by_section: Dict[str, Dict[str,int]] = {}
+
+    matched_by_section: dict[str, dict[str,int]] = {}
+    # score the "requirements" section
     req_score = score_requirements_section(sections.get("requirements",""), keywords)
     matched_by_section["requirements"] = keyword_hits(sections.get("requirements",""), keywords)
 
+
     other = 0.0
+    # score the other two sections
     for sec in ("responsibilities", "about"):
         hits = keyword_hits(sections.get(sec,""), keywords)
-        mult = SECTION_WEIGHTS.get(sec, 1.0)
+        mult = SECTION_HEADERS.get(sec).weight
         other += sum(mult * w for w in hits.values() if w > -1000)
         matched_by_section[sec] = hits
 
@@ -222,5 +201,11 @@ def score_job_description(
     query_terms = [k for k,w in keywords.items() if w > 0]
     bm25f = bm25f_score(sections, query_terms)
     alpha = 0.4
+    # mix kw_score with the bm25 result
     final = alpha * kw_score + (1-alpha) * bm25f
     return ScoreResult(final, True, None, matched_by_section, bm25f)
+
+if __name__ == "__main__":
+    descp = ''''''
+    score = score_job_description(raw_text=descp)
+    print(score.score)
