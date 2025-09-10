@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 reports/*
-logs
+logs/*
 
 # C extensions
 *.so
@@ -141,9 +141,7 @@ celerybeat.pid
 .env
 .envrc
 .venv
-env/*
 venv/
-ENV/
 env.bak/
 venv.bak/
 

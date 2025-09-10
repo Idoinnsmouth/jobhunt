@@ -60,7 +60,7 @@ def load_jobs_to_classes(jobs_data: DataFrame):
 
 def get_proxys() -> list[str]:
     PORT = "1080"
-    with open("env/proxies.txt", "r") as f:
+    with open("proxies.txt", "r") as f:
         ips = f.read().split(",")
 
     username = keyring.get_password("nordvpn1", "username")
