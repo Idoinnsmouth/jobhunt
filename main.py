@@ -1,28 +1,34 @@
-import os
-
-import pandas as pd
-import keyring
-from jobspy import scrape_jobs, JobResponse
+from jobspy import scrape_jobs
 from pandas import DataFrame
 
 from create_report import create_report
 from job import Job
 from os_stuff import notify_and_open_report
+from utils.backup import save_scraping_results_to_backup_folder, delete_scraping_results_from_backup_folder, \
+    get_scraping_results_from_back_folder
+from utils.proxies import get_proxys
 
 
 def run():
-    jobs_data = scrape_jobs(
-        site_name=["linkedin"],
-        search_term="python fullstack developer",
-        google_search_term="python fullstack developer in tel aviv since yesterday",
-        location="Tel aviv, Israel",
-        country_indeed="Israel",
-        linkedin_fetch_description=True,
-        hours_old=24,
-        results_wanted=50,
-        proxies=get_proxys()
-    )
+    jobs_data = get_scraping_results_from_back_folder()
+    if jobs_data is None or jobs_data.empty:
+    # error logging here is done by the package
+        jobs_data = scrape_jobs(
+            site_name=["linkedin"],
+            search_term="python fullstack developer",
+            google_search_term="python fullstack developer in tel aviv since yesterday",
+            location="Tel aviv, Israel",
+            country_indeed="Israel",
+            linkedin_fetch_description=True,
+            hours_old=24,
+            results_wanted=50,
+            proxies=get_proxys()
+        )
 
+        # todo - validate data before saving to backup
+        save_scraping_results_to_backup_folder(jobs_data)
+
+    # todo - save jobs_data as backup if the rest of the pipeline fails - to prevent scraping again on re-runs
     # example set of data
     # script_dir = os.path.dirname(os.path.abspath(__file__))
     # file_path = os.path.join(script_dir, 'a.csv')
@@ -33,6 +39,7 @@ def run():
     jobs = load_jobs_to_classes(jobs_data=jobs_data)
     report_name = create_report(jobs=jobs)
 
+    delete_scraping_results_from_backup_folder()
     notify_and_open_report(report_name)
 
 
@@ -57,16 +64,6 @@ def load_jobs_to_classes(jobs_data: DataFrame):
         jobs.append(job)
 
     return jobs
-
-def get_proxys() -> list[str]:
-    PORT = "1080"
-    with open("proxies.txt", "r") as f:
-        ips = f.read().split(",")
-
-    username = keyring.get_password("nordvpn1", "username")
-    password = keyring.get_password("nordvpn1", "password")
-
-    return [f"socks5h://{username}:{password}@{ip}:{PORT}" for ip in ips]
 
 
 if __name__ == "__main__":

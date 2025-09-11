@@ -22,6 +22,7 @@ class Job:
                  company_url: str | None, desc: str, is_remote: bool,
                  level_desc: str | None, url: str, location: str, title: str,
                  linkedin_url: str, linkedin_company: str):
+        # todo - handle nans that we have instead of None
         self.company = company
         self.company_desc = company_desc
         self.employees_num = employees_num
@@ -34,7 +35,9 @@ class Job:
         self.title = title
 
         try:
-            _rating = score_job_description(self.desc).score
+            # todo - move this to main.py instead of doing this while loading the dataclass (in case of specific error)
+            if type(self.desc) is not float:
+                _rating = score_job_description(self.desc).score
         except Exception as e:
             _rating = 0
             logging.exception(e)
