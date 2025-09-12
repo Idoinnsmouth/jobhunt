@@ -35,6 +35,7 @@ class Job:
         self.title = title
 
         try:
+            _rating = 0
             # todo - move this to main.py instead of doing this while loading the dataclass (in case of specific error)
             if type(self.desc) is not float:
                 _rating = score_job_description(self.desc).score
