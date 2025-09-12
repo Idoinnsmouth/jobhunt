@@ -60,7 +60,7 @@ KEYWORDS_CONFIG: dict[str, int] = {
     "fullstack": 15,
 
     "gcp": -10,
-    "kubernetes": -50,
+    "kubernetes": -100,
 }
 MUST_HAVE: set[str] = {"python"}
 HARD_AVOID: set[str] = {"angular", "php", "wordpress", "drupal", "ruby", "web3"}
