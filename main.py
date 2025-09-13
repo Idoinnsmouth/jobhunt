@@ -1,9 +1,9 @@
 from jobspy import scrape_jobs
 from pandas import DataFrame
 
-from create_report import create_report
-from job import Job
-from os_stuff import notify_and_open_report
+from services.create_report import create_report
+from models.job import Job
+from utils.os_stuff import notify_and_open_report
 from utils.backup import save_scraping_results_to_backup_folder, delete_scraping_results_from_backup_folder, \
     get_scraping_results_from_back_folder
 from utils.proxies import get_proxys
@@ -28,7 +28,6 @@ def run():
         # todo - validate data before saving to backup
         save_scraping_results_to_backup_folder(jobs_data)
 
-    # todo - save jobs_data as backup if the rest of the pipeline fails - to prevent scraping again on re-runs
     # example set of data
     # script_dir = os.path.dirname(os.path.abspath(__file__))
     # file_path = os.path.join(script_dir, 'a.csv')

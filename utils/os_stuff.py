@@ -4,7 +4,7 @@ from pathlib import Path
 from pync import Notifier
 
 def notify_and_open_report(report_name: str):
-    project_root = Path(__file__).resolve().parent
+    project_root = Path(__file__).resolve().parent.parent
     target = (project_root / "reports" / f"{report_name}.xlsx").resolve()
 
     if not target.exists():

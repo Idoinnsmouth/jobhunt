@@ -6,7 +6,7 @@ import pandas as pd
 from openpyxl.reader.excel import load_workbook
 from openpyxl.styles import Alignment, PatternFill, Border, Side
 
-from job import Job
+from models.job import Job
 
 COLUMNS = {
     "rating": "Rating",
@@ -32,7 +32,7 @@ def create_report(jobs: list[Job]) -> str:
     name = f"job_report_{time.day}-{time.month}-{time.year}"
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    df.to_excel(f"{os.path.join(script_dir)}/reports/{name}.xlsx", index=False)
+    df.to_excel(f"{os.path.join(script_dir)}/../reports/{name}.xlsx", index=False)
     _post_creation_changes(name)
 
     return name
@@ -41,7 +41,7 @@ def create_report(jobs: list[Job]) -> str:
 def _post_creation_changes(report_name: str):
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
-    wb = load_workbook(f"{os.path.join(script_dir)}/reports/{report_name}.xlsx")
+    wb = load_workbook(f"{os.path.join(script_dir)}/../reports/{report_name}.xlsx")
     ws = wb.active
 
     for idx, row in enumerate(ws.iter_rows()):
@@ -70,4 +70,4 @@ def _post_creation_changes(report_name: str):
                      top=Side(style='thin'),
                      bottom=Side(style='thin'))
 
-    wb.save(f"{os.path.join(script_dir)}/reports/{report_name}.xlsx")
+    wb.save(f"{os.path.join(script_dir)}/../reports/{report_name}.xlsx")

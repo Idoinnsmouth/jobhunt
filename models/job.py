@@ -1,7 +1,7 @@
 import logging
 from dataclasses import dataclass
 
-from job_analysis import score_job_description
+from services.job_analysis import score_job_description
 
 
 @dataclass
